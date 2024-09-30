@@ -1,0 +1,49 @@
+@use "../../styles/variables.scss";
+
+.hero-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 80px;
+}
+
+.first-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	align-items: flex-end; // Align all children to the bottom of the container
+	position: relative; // Add position for more control over alignment
+}
+
+.first-section-title {
+	font-size: 140px;
+	color: variables.$white;
+	font-family: "FiraCode", sans-serif;
+	font-weight: 500;
+	margin: 0;
+	line-height: 1;
+	display: flex;
+	align-items: flex-end;
+	width: auto;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	width: 30%;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 5px;
+}
+
+.projects-button {
+	width: 60%;
+	height: 55px;
+}
+
+.arrow-button {
+	width: 55px;
+	height: 55px;
+}

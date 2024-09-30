@@ -10,9 +10,19 @@
 }
 
 .navbar-menu {
-	width: 20%;
+	width: 300px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+	.navbar-menu {
+		display: none;
+	}
+
+	.language-menu {
+		display: none;
+	}
 }
