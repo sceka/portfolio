@@ -1,6 +1,24 @@
 import React from "react";
 import "./HeroSection.scss";
 import Button from "../common/Button/Button";
+import CustomCarousel from "../common/CustomCarousel/CustomCarousel";
+
+const links = [
+	{
+		name: "github",
+		link: "https://github.com/sceka"
+	},
+	{
+		name: "linkedin",
+		link: "https://www.linkedin.com/in/scekicmarko/"
+	}
+];
+
+function onClickBtn(icon: string) {
+	links.map(link => {
+		if (link.name === icon) window.location.href = link.link;
+	});
+}
 
 export default function HeroSection() {
 	return (
@@ -9,11 +27,13 @@ export default function HeroSection() {
 				<div className='first-section-title'>Full-stack</div>{" "}
 				<div className='buttons'>
 					<div className='projects-button'>
-						<Button variant='fill' label='Projects' />
+						{/* TODO: Change onClick function */}
+						<Button variant='fill' label='Projects' onClick={() => {}} />
 					</div>
 					<div className='arrow-button'>
 						{/* TODO: Add normal right arrow with transparent background */}
-						<Button variant='fill' icon='/images/ccc.png' />
+						{/* TODO: Change onClick function */}
+						<Button variant='fill' icon='/images/ccc.png' onClick={() => {}} />
 					</div>
 				</div>
 			</div>
@@ -27,40 +47,52 @@ export default function HeroSection() {
 			<div className='action-buttons'>
 				<div className='aciton-btns'>
 					<Button
-						variant='white-outline'
+						variant='gray-outline'
 						label='Github'
 						icon='/images/github.png'
 						className='action-btn'
+						onClick={() => onClickBtn("github")}
 					/>
 					<Button
-						variant='white-outline'
+						variant='gray-outline'
 						label='LinkedIn'
 						icon='/images/linkedin.png'
 						className='action-btn'
+						iconClassName='btn-icon'
+						onClick={() => onClickBtn("linkedin")}
 					/>
 				</div>
 				<div>
 					<Button
-						variant='white-outline'
+						variant='gray-outline'
 						label='Github'
 						icon='/images/github.png'
 						className='action-btn'
+						// TODO: Add link
+						onClick={() => {}}
 					/>
 				</div>
 				<div className='aciton-btns'>
 					<Button
-						variant='white-outline'
+						variant='gray-outline'
 						label='Github'
 						icon='/images/github.png'
 						className='action-btn'
+						// TODO: Add link
+						onClick={() => {}}
 					/>
 					<Button
-						variant='white-outline'
+						variant='gray-outline'
 						label='Github'
 						icon='/images/github.png'
 						className='action-btn'
+						// TODO: Add link
+						onClick={() => {}}
 					/>
 				</div>
+			</div>
+			<div className='carousel-container'>
+				<CustomCarousel />
 			</div>
 		</div>
 	);

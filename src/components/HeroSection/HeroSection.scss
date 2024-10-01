@@ -88,10 +88,11 @@
 }
 
 .action-btn {
-	width: 110px;
-	height: 40px;
+	width: 120px;
+	height: 45px;
 	border-radius: 100px;
 	box-shadow: none;
+	cursor: pointer;
 }
 
 .aciton-btns {
@@ -99,4 +100,13 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.btn-icon {
+	width: 15px;
+	margin: 4px;
+}
+
+.carousel-container {
+	margin-top: 40px;
 }

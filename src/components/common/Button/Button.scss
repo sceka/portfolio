@@ -7,14 +7,14 @@
 
 .white-outline {
 	background-color: transparent;
-	border: 1.5px solid variables.$white;
+	border: 1px solid variables.$white;
 	color: variables.$white;
 	border-radius: 100px;
 }
 
 .gray-outline {
 	background-color: transparent;
-	border: 1px solid variables.$light-gray;
+	border: 0.5px solid variables.$light-gray;
 	color: variables.$white;
 	border-radius: 100px;
 }
@@ -28,8 +28,8 @@
 }
 
 .icon {
-	width: 25px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 }
 
 .icon-and-label {
@@ -37,6 +37,18 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	gap: 5px; // Space between the icon and label
+	gap: 5px;
 	border-radius: 100px;
+
+	color: variables.$light-gray;
+	font-family: "OpenSans", sans-serif;
+	font-style: italic;
+}
+
+.label {
+	font-family: "OpenSans", sans-serif;
+	color: variables.$light-black;
+	background-color: transparent;
+	font-style: italic;
+	font-size: 18px;
 }

@@ -6,18 +6,26 @@ type Props = {
 	icon?: string;
 	label?: string;
 	className?: string;
+	iconClassName?: string;
+	onClick: () => void;
 };
 
-export default function Button({ variant, icon, label, className }: Props) {
+export default function Button({ variant, icon, label, className, iconClassName, onClick }: Props) {
 	return (
-		<button className={`${variant} ${className ? className : "button"}`}>
+		<button className={`${variant} ${className ? className : "button"}`} onClick={onClick}>
 			{label && !icon ? (
-				label
+				<label className='label'>{label}</label>
 			) : !label && icon ? (
 				<img className='icon' src={icon} alt={icon} />
 			) : (
 				<div className='icon-and-label'>
-					{<img className='icon' src={icon} alt={icon} />}
+					{
+						<img
+							className={`${iconClassName ? iconClassName : "icon"}`}
+							src={icon}
+							alt={icon}
+						/>
+					}
 					<label>{label}</label>
 				</div>
 			)}
