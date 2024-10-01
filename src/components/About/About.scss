@@ -1,0 +1,35 @@
+@use "../../styles/variables.scss";
+
+.about-container {
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-title-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "OpenSans", sans-serif;
+	width: 100%;
+
+	h4 {
+		color: variables.$white;
+		width: 50%;
+	}
+
+	p {
+		color: variables.$light-gray;
+		width: 400px;
+		word-break: normal;
+
+		span {
+			font-family: "FiraCode", sans-serif;
+			color: variables.$white;
+		}
+	}
+}
+
+.about-description {
+	width: 50%;
+}
