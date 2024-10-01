@@ -1,8 +1,95 @@
+@use "../../../styles/variables.scss";
+
 .carousel {
-	width: 100%;
+	width: 100%; /* Make sure the carousel itself takes up 100% of the parent container */
 }
 
 .carousel .slide {
-	opacity: 0.5; /* Make the non-center slides partially transparent */
+	// opacity: 0.5; /* Make the non-center slides partially transparent */
 	transition: opacity 0.5s ease;
+	width: 100%; /* Ensure each slide also takes full width */
+	padding: 0 30px;
+}
+
+.carousel-slide {
+	padding: 0 10px; /* Adjusts the gap between the slides */
+	margin: 0 10px;
+}
+
+.custom-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px; /* Adjust the size of the button */
+	height: 50px; /* Circle size */
+	border-radius: 50%; /* Make the button circular */
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10; /* Ensure arrows are above slides */
+}
+
+.custom-prev {
+	left: 10px; /* Position the left arrow */
+}
+
+.custom-next {
+	right: 10px; /* Position the right arrow */
+}
+
+.custom-arrow img {
+	width: 20px; /* Adjust size of the arrow image */
+	height: auto;
+}
+
+.custom-arrow {
+	border: 0.5px solid white;
+	width: 80px;
+	height: 80px;
+}
+
+.carousel-container {
+	position: relative;
+}
+
+.carousel-shadow {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 200px; /* Increase the width for smoother shadow transition */
+	z-index: 5;
+	pointer-events: none;
+}
+
+.start-shadow {
+	left: 0;
+	background: linear-gradient(to right, #121212 10%, rgba(18, 18, 18, 0.1) 100%);
+	/* Strong shadow fading towards the center */
+}
+
+.end-shadow {
+	right: 0;
+	background: linear-gradient(to left, #121212 10%, rgba(18, 18, 18, 0.1) 100%);
+	/* Similar shadow for the right side */
+}
+
+.carousel .slide {
+	opacity: 0.2; /* Default opacity for non-centered slides */
+	transition: opacity 0.5s ease, transform 0.5s ease; /* Ensure smooth transitions */
+}
+
+.carousel .slide:not(.carousel-slide-center) {
+	opacity: 0.2; /* Darken non-centered slides */
+}
+
+.carousel .slide.carousel-slide-center {
+	opacity: 1; /* Center slide is fully visible */
+	z-index: 10; /* Ensure centered slide appears above others */
+	transform: scale(1.05); /* Optional: slightly scale up centered slide */
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+	opacity: 1; /* Center slide is fully visible */
 }

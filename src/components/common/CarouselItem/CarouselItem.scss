@@ -1,9 +1,74 @@
+@use "../../../styles/variables.scss";
+
 .carousel-item {
-	width: 650px;
-	height: 100px;
+	width: 100%; /* Ensure the carousel item takes the full width */
+	height: 250px; /* Fix the height */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; /* Prevent overflow */
+	border-radius: 10px;
+	position: relative; /* Required for absolutely positioned child elements */
 }
 
 .carousel-image {
-	width: 100%;
+	width: auto; /* Maintain the aspect ratio of the image */
+	height: 100%; /* Set height to fill the container */
+	object-fit: cover; /* Keep the image contained within its container */
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.item-details {
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
 	height: 100%;
+	right: 0;
+	border-end-end-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 0 30px;
+	text-align: left;
+	background-color: rgba(18, 18, 18, 0.9);
+
+	h1 {
+		margin-top: 20px;
+		color: variables.$white;
+		font-family: "FiraCode", sans-serif;
+		font-size: 20px;
+		background-color: transparent;
+	}
+
+	p {
+		margin-top: 10px;
+		color: variables.$white;
+		font-family: "OpenSans", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		background-color: transparent;
+	}
+}
+
+.carousel-buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+	margin-top: 20px;
+	background-color: transparent;
+}
+
+.carousel-project-button {
+	width: 300px;
+	background-color: transparent;
+}
+
+.carousel-more-button {
+	background-color: transparent;
+	width: 50px;
+	height: 50px;
 }

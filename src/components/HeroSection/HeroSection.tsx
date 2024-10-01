@@ -33,7 +33,7 @@ export default function HeroSection() {
 					<div className='arrow-button'>
 						{/* TODO: Add normal right arrow with transparent background */}
 						{/* TODO: Change onClick function */}
-						<Button variant='fill' icon='/images/ccc.png' onClick={() => {}} />
+						<Button variant='fill' icon='/images/right-arrow.png' onClick={() => {}} />
 					</div>
 				</div>
 			</div>
