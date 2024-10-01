@@ -12,7 +12,8 @@ export default function HeroSection() {
 						<Button variant='fill' label='Projects' />
 					</div>
 					<div className='arrow-button'>
-						<Button variant='fill' icon='/images/arrow.png' />
+						{/* TODO: Add normal right arrow with transparent background */}
+						<Button variant='fill' icon='/images/ccc.png' />
 					</div>
 				</div>
 			</div>
