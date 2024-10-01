@@ -26,3 +26,44 @@
 		display: none;
 	}
 }
+
+.navbar-name {
+	word-break: normal;
+	width: 50px;
+	font-family: "OpenSans", sans-serif;
+	cursor: pointer;
+}
+
+.navbar-menu {
+	font-family: "OpenSans", sans-serif;
+	font-size: 14px;
+
+	p {
+		cursor: pointer;
+	}
+}
+
+.big-circle {
+	position: absolute;
+	right: -45px; /* Move the circle out of the viewport */
+	top: -45px;
+	border-radius: 100px;
+	border: 0.5px solid variables.$light-gray;
+	width: 200px;
+	height: 200px;
+	z-index: 0;
+}
+
+.language-menu {
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+
+	p {
+		font-size: 18px;
+		font-family: "OpenSans", sans-serif;
+	}
+}

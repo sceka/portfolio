@@ -4,8 +4,8 @@ import "./Navbar.scss";
 export default function Navbar() {
 	return (
 		<div className='n-container'>
-			<div className='navbar-name'>
-				<p>Marko Scekic</p>
+			<div>
+				<p className='navbar-name'>Marko Scekic</p>
 			</div>
 			<div className='navbar-menu'>
 				<p>About</p>
@@ -13,7 +13,11 @@ export default function Navbar() {
 				<p>Bla</p>
 				<p>Truc</p>
 			</div>
-			<div className='language-menu'>En Russian</div>
+			<div className='big-circle'></div>
+			<div className='language-menu'>
+				<p>En</p>
+				<p>Ru</p>
+			</div>
 			{/* TODO: Add burger menu */}
 		</div>
 	);
