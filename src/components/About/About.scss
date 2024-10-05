@@ -33,3 +33,66 @@
 .about-description {
 	width: 50%;
 }
+
+.skills-container {
+	margin-top: 150px;
+	color: white;
+}
+
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.first-box {
+	width: 350px;
+	height: 100px;
+	padding: 15px;
+	background-color: transparent;
+	border: 0.5px solid variables.$white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+
+	h4 {
+		font-family: "OpenSans", sans-serif;
+		font-weight: 300;
+	}
+
+	p {
+		font-family: "FiraCode", sans-serif;
+		font-weight: 300;
+		font-size: 12px;
+		margin-top: 7px;
+	}
+}
+
+.second-box {
+	width: 200px;
+	height: 100px;
+	padding: 15px;
+	background-color: transparent;
+	border: 0.5px solid variables.$white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.first-box:hover {
+	background-color: white;
+	color: variables.$light-black;
+
+	h4 {
+		background-color: white;
+	}
+
+	p {
+		background-color: white;
+	}
+}
+
+.skills-and-image-container {
+	display: flex;
+	justify-content: space-between;
+}

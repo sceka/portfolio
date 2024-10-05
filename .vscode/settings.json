@@ -86,7 +86,8 @@
 	"github.copilot.editor.enableAutoCompletions": true,
 	"[prisma]": {
 		"editor.defaultFormatter": "Prisma.prisma"
-	}
+	},
+	"compile-hero.disable-compile-files-on-did-save-code": false
 	// "workbench.colorCustomizations": {
 	// 	"tab.activeBackground": "#242A37",
 	// 	"tab.inactiveBackground": "#242A37",
