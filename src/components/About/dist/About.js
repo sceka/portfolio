@@ -2,6 +2,7 @@
 exports.__esModule = true;
 var react_1 = require("react");
 require("./About.scss");
+var Button_1 = require("../common/Button/Button");
 function About() {
     return (react_1["default"].createElement("div", { className: 'about-container' },
         react_1["default"].createElement("div", { className: 'about-title-section' },
@@ -19,8 +20,13 @@ function About() {
                 react_1["default"].createElement("div", { className: 'first-box' },
                     react_1["default"].createElement("h4", null, "Front-end"),
                     react_1["default"].createElement("p", null, "Typescript / React / Vue / Vuex / Redux Toolkit / React Native / Quasar Framework")),
-                react_1["default"].createElement("div", { className: 'second-box' },
-                    react_1["default"].createElement("h4", null, "Styles"),
-                    react_1["default"].createElement("p", null, "Typescript / React Native / Quasar Framework"))))));
+                react_1["default"].createElement("div", { className: 'second-box-about-me' },
+                    react_1["default"].createElement("div", { className: 'second-box' },
+                        react_1["default"].createElement("h4", null, "Styles"),
+                        react_1["default"].createElement("p", null, "Typescript / React Native / Quasar Framework")),
+                    react_1["default"].createElement("div", { className: 'github-button' },
+                        react_1["default"].createElement("div", { className: 'github-wrapper' },
+                            react_1["default"].createElement(Button_1["default"], { onClick: function () { }, variant: 'white-outline', icon: '/images/github.png', className: 'github' }),
+                            react_1["default"].createElement(Button_1["default"], { onClick: function () { }, variant: 'fill', icon: '/images/diagonalRight.svg', className: 'arrow-button', iconClassName: 'diagonal-arrow' }))))))));
 }
 exports["default"] = About;

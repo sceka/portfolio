@@ -46,16 +46,18 @@
 }
 
 .first-box {
-	width: 350px;
-	height: 100px;
+	width: 400px;
+	height: 110px;
 	padding: 15px;
+	line-height: 20px;
 	background-color: transparent;
 	border: 0.5px solid variables.$white;
-	border-radius: 10px;
+	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
 
 	h4 {
+		color: variables.$light-gray;
 		font-family: "OpenSans", sans-serif;
 		font-weight: 300;
 	}
@@ -74,17 +76,32 @@
 	padding: 15px;
 	background-color: transparent;
 	border: 0.5px solid variables.$white;
-	border-radius: 10px;
+	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
+
+	h4 {
+		font-family: "OpenSans", sans-serif;
+		font-weight: 300;
+		color: variables.$light-gray;
+	}
+
+	p {
+		font-family: "FiraCode", sans-serif;
+		font-weight: 300;
+		font-size: 12px;
+		margin-top: 7px;
+	}
 }
 
-.first-box:hover {
+.first-box:hover,
+.second-box:hover {
 	background-color: white;
 	color: variables.$light-black;
 
 	h4 {
 		background-color: white;
+		color: variables.$light-black;
 	}
 
 	p {
@@ -95,4 +112,49 @@
 .skills-and-image-container {
 	display: flex;
 	justify-content: space-between;
+}
+
+.second-box-about-me {
+	display: flex;
+	justify-content: space-between;
+}
+
+.github-wrapper {
+	width: 150px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.github-button {
+	display: flex;
+	position: relative;
+}
+
+.github {
+	width: 55px;
+	height: 55px;
+	border-radius: 100px;
+	position: absolute;
+	right: 20;
+	transition: right 0.5s ease-in; // ease-in for smoother start
+}
+
+.arrow-button {
+	width: 55px;
+	height: 55px;
+	border-radius: 100px;
+	position: absolute;
+	right: 55px; // starts outside of view
+	cursor: pointer;
+	transition: right 0.5s ease-in;
+}
+
+.diagonal-arrow {
+	width: 35px;
+	height: 35px;
+}
+
+.github-wrapper:hover .arrow-button {
+	right: 95px; // arrow moves into the GitHub button's position
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.scss";
+import Button from "../common/Button/Button";
 
 export default function About() {
 	return (
@@ -22,9 +23,28 @@ export default function About() {
 							Framework
 						</p>
 					</div>
-					<div className='second-box'>
-						<h4>Styles</h4>
-						<p>Typescript / React Native / Quasar Framework</p>
+					<div className='second-box-about-me'>
+						<div className='second-box'>
+							<h4>Styles</h4>
+							<p>Typescript / React Native / Quasar Framework</p>
+						</div>
+						<div className='github-button'>
+							<div className='github-wrapper'>
+								<Button
+									onClick={() => {}}
+									variant='white-outline'
+									icon='/images/github.png'
+									className='github'
+								/>
+								<Button
+									onClick={() => {}}
+									variant='fill'
+									icon='/images/diagonalRight.svg'
+									className='arrow-button'
+									iconClassName='diagonal-arrow'
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

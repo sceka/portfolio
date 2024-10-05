@@ -41,16 +41,18 @@
 }
 
 .first-box {
-  width: 350px;
-  height: 100px;
+  width: 400px;
+  height: 110px;
   padding: 15px;
+  line-height: 20px;
   background-color: transparent;
   border: 0.5px solid #f5f5f5;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
 .first-box h4 {
+  color: #a6a6a6;
   font-family: "OpenSans", sans-serif;
   font-weight: 300;
 }
@@ -67,23 +69,83 @@
   padding: 15px;
   background-color: transparent;
   border: 0.5px solid #f5f5f5;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
 }
+.second-box h4 {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 300;
+  color: #a6a6a6;
+}
+.second-box p {
+  font-family: "FiraCode", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 7px;
+}
 
-.first-box:hover {
+.first-box:hover,
+.second-box:hover {
   background-color: white;
   color: #121212;
 }
-.first-box:hover h4 {
+.first-box:hover h4,
+.second-box:hover h4 {
   background-color: white;
+  color: #121212;
 }
-.first-box:hover p {
+.first-box:hover p,
+.second-box:hover p {
   background-color: white;
 }
 
 .skills-and-image-container {
   display: flex;
   justify-content: space-between;
+}
+
+.second-box-about-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+.github-wrapper {
+  width: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.github-button {
+  display: flex;
+  position: relative;
+}
+
+.github {
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
+  position: absolute;
+  right: 20;
+  transition: right 0.5s ease-in;
+}
+
+.arrow-button {
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
+  position: absolute;
+  right: 55px;
+  cursor: pointer;
+  transition: right 0.5s ease-in;
+}
+
+.diagonal-arrow {
+  width: 35px;
+  height: 35px;
+}
+
+.github-wrapper:hover .arrow-button {
+  right: 95px;
 }

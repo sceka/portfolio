@@ -14,6 +14,12 @@
 	border-radius: 100px;
 }
 
+.icon-fill {
+	background-color: variables.$white;
+	border-radius: 50%;
+	padding: 5px;
+}
+
 .gray-outline {
 	background-color: transparent;
 	border: 0.5px solid variables.$light-gray;
