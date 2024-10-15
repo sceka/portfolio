@@ -46,10 +46,11 @@
   padding: 15px;
   line-height: 20px;
   background-color: transparent;
-  border: 0.5px solid #f5f5f5;
+  border: 0.5px solid #a6a6a6;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 .first-box h4 {
   color: #a6a6a6;
@@ -68,10 +69,11 @@
   height: 100px;
   padding: 15px;
   background-color: transparent;
-  border: 0.5px solid #f5f5f5;
+  border: 0.5px solid #a6a6a6;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 .second-box h4 {
   font-family: "OpenSans", sans-serif;
@@ -148,4 +150,19 @@
 
 .github-wrapper:hover .arrow-button {
   right: 95px;
+}
+
+.last-about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.last-about-section .last-section-description {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 300;
+  color: #a6a6a6;
+  font-size: 12px;
+  display: flex;
+  width: 200px;
 }

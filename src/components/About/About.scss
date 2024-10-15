@@ -51,10 +51,11 @@
 	padding: 15px;
 	line-height: 20px;
 	background-color: transparent;
-	border: 0.5px solid variables.$white;
+	border: 0.5px solid variables.$light-gray;
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 10px;
 
 	h4 {
 		color: variables.$light-gray;
@@ -75,10 +76,11 @@
 	height: 100px;
 	padding: 15px;
 	background-color: transparent;
-	border: 0.5px solid variables.$white;
+	border: 0.5px solid variables.$light-gray;
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 10px;
 
 	h4 {
 		font-family: "OpenSans", sans-serif;
@@ -157,4 +159,20 @@
 
 .github-wrapper:hover .arrow-button {
 	right: 95px; // arrow moves into the GitHub button's position
+}
+
+.last-about-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 400px;
+
+	.last-section-description {
+		font-family: "OpenSans", sans-serif;
+		font-weight: 300;
+		color: variables.$light-gray;
+		font-size: 12px;
+		display: flex;
+		width: 200px;
+	}
 }

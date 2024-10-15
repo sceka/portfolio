@@ -46,6 +46,22 @@ export default function About() {
 							</div>
 						</div>
 					</div>
+					<div className='first-box'>
+						<h4>Front-end</h4>
+						<p>
+							Typescript / React / Vue / Vuex / Redux Toolkit / React Native / Quasar
+							Framework
+						</p>
+					</div>
+					<div className='last-about-section'>
+						<p className='last-section-description'>
+							Some of my favorite technologies topics, or tools that I worked with.
+						</p>
+						<div className='second-box'>
+							<h4>DevOps</h4>
+							<p>Nginx / Brotli / Docker / (CI/CD)</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
