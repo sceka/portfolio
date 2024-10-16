@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
+import { useAppDispatch, useAppSelector } from "../../redux/hooks";
+import { useDispatch } from "react-redux";
+import { changeLanguage } from "../../redux/reducers/languageSlice";
 
 export default function Navbar() {
 	const [language, setLanguage] = useState("EN");
+	const languageChosen = useAppSelector(state => state.language);
+	const dispatch = useAppDispatch();
 	function onClickChange(language: string) {
 		setLanguage(language);
+		dispatch(changeLanguage(language));
 	}
 	return (
 		<div className='n-container'>
