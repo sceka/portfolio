@@ -1,26 +1,26 @@
-export const english = [
+export const languageTexts = [
 	{
-		navbar: ["About", "Projects", "Articles", "Contacts"]
+		name: "EN",
+		navbar: ["About", "Projects", "Articles", "Contacts"],
+		hero: "My goal is to write <span>maintainable code, clean and understandable code</span> to make the development process enjoyable.",
+		heroDeveloperWord: "Developer",
+		cvButton: "Download CV",
+		about: "Hello! I am Marko, I'm <span>full-stack developer</span>. More than <span>3 years</span> experience."
 	},
 	{
-		hero: "My goal is to write maintainable code, clean andunderstandable code to process development was enjoable."
-	}
-];
-
-export const russian = [
-	{
-		navbar: ["Обо мне", "Проекты", "Статьи", "Контакты"]
+		name: "RU",
+		navbar: ["Обо мне", "Проекты", "Статьи", "Контакты"],
+		hero: "Моя цель — <span>писать поддерживаемый, чистый и понятный код,</span> чтобы процесс разработки был приятным.",
+		heroDeveloperWord: "Разработчик",
+		cvButton: "Скачать резюме",
+		about: "Привет! Я Марко, я <span>full-stack разработчик</span>. Более <span>3 лет</span> опыта."
 	},
 	{
-		hero: "Моя цель — писать поддерживаемый, чистый и понятный код, чтобы процесс разработки был приятным."
-	}
-];
-
-export const serbian = [
-	{
-		navbar: ["O meni", "Projekti", "Artikli", "Contact"]
-	},
-	{
-		hero: "Moj cilj je pisati održiv, čist i razumljiv kod, da proces razvoja bude ugodan."
+		name: "SR",
+		navbar: ["O meni", "Projekti", "Artikli", "Kontakt"],
+		hero: "Moj cilj je pisati <span>održiv, čist i razumljiv kod,</span> da proces razvoja bude ugodan.",
+		heroDeveloperWord: "Developer",
+		cvButton: "Preuzmi CV",
+		about: "Zdravo! Ja sam Marko, ja sam <span>full-stack developer</span>. Više od <span>3 godine</span> iskustva."
 	}
 ];

@@ -32,16 +32,16 @@
 .buttons {
 	display: flex;
 	flex-direction: row;
-	width: 30%;
+	width: 400px;
 	align-items: flex-end; /* Align buttons to the bottom */
-	justify-content: flex-end; /* Push buttons to the far right */
+	justify-content: space-between; /* Push buttons to the far right */
 	gap: 5px; /* Space between the buttons */
 	// TODO: Remove this after you fix issue with aligning
 	margin-bottom: 15px;
 }
 
 .projects-button {
-	width: 60%;
+	width: 270px;
 	height: 55px;
 }
 

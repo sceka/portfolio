@@ -2,6 +2,8 @@ import React from "react";
 import "./HeroSection.scss";
 import Button from "../common/Button/Button";
 import CustomCarousel from "../common/CustomCarousel/CustomCarousel";
+import { useAppSelector } from "../../redux/hooks";
+import { languageTexts } from "../../util/language";
 
 const links = [
 	{
@@ -21,6 +23,12 @@ function onClickBtn(icon: string) {
 }
 
 export default function HeroSection() {
+	const languageChosen = useAppSelector(state => state.language);
+	const selectedText = languageTexts.find(language => language.name === languageChosen)?.hero;
+	const buttonText = languageTexts.find(language => language.name === languageChosen)?.cvButton;
+	const heroDeveloperWord = languageTexts.find(
+		language => language.name === languageChosen
+	)?.heroDeveloperWord;
 	return (
 		<div className='hero-section'>
 			<div className='first-section'>
@@ -28,7 +36,7 @@ export default function HeroSection() {
 				<div className='buttons'>
 					<div className='projects-button'>
 						{/* TODO: Change onClick function */}
-						<Button variant='fill' label='Projects' onClick={() => {}} />
+						<Button variant='fill' label={buttonText} onClick={() => {}} />
 					</div>
 					<div className='arrow-button'>
 						{/* TODO: Add normal right arrow with transparent background */}
@@ -38,11 +46,8 @@ export default function HeroSection() {
 				</div>
 			</div>
 			<div className='second-section'>
-				<p>
-					My goal is to write <span>maintainable code</span>, <span>clean</span> and
-					<span>understandable code</span> to process development was enjoable.
-				</p>
-				<h1>Developer</h1>
+				<p dangerouslySetInnerHTML={{ __html: selectedText as string }}></p>
+				<h1>{heroDeveloperWord}</h1>
 			</div>
 			<div className='action-buttons'>
 				<div className='aciton-btns'>

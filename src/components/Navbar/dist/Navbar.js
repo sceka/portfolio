@@ -4,26 +4,23 @@ var react_1 = require("react");
 require("./Navbar.scss");
 var hooks_1 = require("../../redux/hooks");
 var languageSlice_1 = require("../../redux/reducers/languageSlice");
+var language_1 = require("../../util/dist/language");
 function Navbar() {
-    var _a = react_1.useState("EN"), language = _a[0], setLanguage = _a[1];
+    var _a;
     var languageChosen = hooks_1.useAppSelector(function (state) { return state.language; });
     var dispatch = hooks_1.useAppDispatch();
     function onClickChange(language) {
-        setLanguage(language);
         dispatch(languageSlice_1.changeLanguage(language));
     }
     return (react_1["default"].createElement("div", { className: 'n-container' },
         react_1["default"].createElement("div", null,
             react_1["default"].createElement("p", { className: 'navbar-name' }, "Marko Scekic")),
-        react_1["default"].createElement("div", { className: 'navbar-menu' },
-            react_1["default"].createElement("p", null, "About"),
-            react_1["default"].createElement("p", null, "Projects"),
-            react_1["default"].createElement("p", null, "Bla"),
-            react_1["default"].createElement("p", null, "Truc")),
+        react_1["default"].createElement("div", { className: 'navbar-menu' }, (_a = language_1.languageTexts
+            .find(function (language) { return language.name === languageChosen; })) === null || _a === void 0 ? void 0 : _a.navbar.map(function (item) { return (react_1["default"].createElement("p", { key: item }, item)); })),
         react_1["default"].createElement("div", { className: 'big-circle' }),
         react_1["default"].createElement("div", { className: 'language-menu' },
-            react_1["default"].createElement("p", { onClick: function () { return onClickChange("EN"); }, style: language === "EN" ? { textDecoration: "underline" } : {} }, "En"),
-            react_1["default"].createElement("p", { onClick: function () { return onClickChange("RU"); }, style: language === "RU" ? { textDecoration: "underline" } : {} }, "Ru"),
-            react_1["default"].createElement("p", { onClick: function () { return onClickChange("SR"); }, style: language === "SR" ? { textDecoration: "underline" } : {} }, "Sr"))));
+            react_1["default"].createElement("p", { onClick: function () { return onClickChange("EN"); }, style: languageChosen === "EN" ? { textDecoration: "underline" } : {} }, "En"),
+            react_1["default"].createElement("p", { onClick: function () { return onClickChange("RU"); }, style: languageChosen === "RU" ? { textDecoration: "underline" } : {} }, "Ru"),
+            react_1["default"].createElement("p", { onClick: function () { return onClickChange("SR"); }, style: languageChosen === "SR" ? { textDecoration: "underline" } : {} }, "Sr"))));
 }
 exports["default"] = Navbar;

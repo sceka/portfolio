@@ -1,17 +1,18 @@
 import React from "react";
 import "./About.scss";
 import Button from "../common/Button/Button";
+import { languageTexts } from "../../util/language";
+import { useAppSelector } from "../../redux/hooks";
 
 export default function About() {
+	const languageChosen = useAppSelector(state => state.language);
+	const aboutText = languageTexts.find(language => languageChosen === language.name)?.about;
 	return (
 		<div className='about-container'>
 			<div className='about-title-section'>
 				<h4>.../About me...</h4>
 				<div className='about-description'>
-					<p>
-						Hello! I am Marko, I'm <span>full-stack developer</span>. More than{" "}
-						<span>3 years</span> experience.
-					</p>
+					<p dangerouslySetInnerHTML={{ __html: aboutText as string }}></p>
 				</div>
 			</div>
 			<div className='skills-and-image-container'>

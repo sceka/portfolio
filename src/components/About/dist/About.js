@@ -3,18 +3,17 @@ exports.__esModule = true;
 var react_1 = require("react");
 require("./About.scss");
 var Button_1 = require("../common/Button/Button");
+var language_1 = require("../../util/language");
+var hooks_1 = require("../../redux/hooks");
 function About() {
+    var _a;
+    var languageChosen = hooks_1.useAppSelector(function (state) { return state.language; });
+    var aboutText = (_a = language_1.languageTexts.find(function (language) { return languageChosen === language.name; })) === null || _a === void 0 ? void 0 : _a.about;
     return (react_1["default"].createElement("div", { className: 'about-container' },
         react_1["default"].createElement("div", { className: 'about-title-section' },
             react_1["default"].createElement("h4", null, ".../About me..."),
             react_1["default"].createElement("div", { className: 'about-description' },
-                react_1["default"].createElement("p", null,
-                    "Hello! I am Marko, I'm ",
-                    react_1["default"].createElement("span", null, "full-stack developer"),
-                    ". More than",
-                    " ",
-                    react_1["default"].createElement("span", null, "3 years"),
-                    " experience."))),
+                react_1["default"].createElement("p", { dangerouslySetInnerHTML: { __html: aboutText } }))),
         react_1["default"].createElement("div", { className: 'skills-and-image-container' },
             react_1["default"].createElement("div", { className: 'skills-container' },
                 react_1["default"].createElement("div", { className: 'first-box' },
