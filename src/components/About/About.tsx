@@ -7,6 +7,9 @@ import { useAppSelector } from "../../redux/hooks";
 export default function About() {
 	const languageChosen = useAppSelector(state => state.language);
 	const aboutText = languageTexts.find(language => languageChosen === language.name)?.about;
+	const aboutTechonlogiesText = languageTexts.find(
+		language => languageChosen === language.name
+	)?.aboutText;
 	return (
 		<div className='about-container'>
 			<div className='about-title-section'>
@@ -55,10 +58,11 @@ export default function About() {
 						</p>
 					</div>
 					<div className='last-about-section'>
-						<p className='last-section-description'>
-							Some of my <span>favorite technologies, topics, or tools</span> that I
-							worked with.
-						</p>
+						<p
+							className='last-section-description'
+							dangerouslySetInnerHTML={{
+								__html: aboutTechonlogiesText as string
+							}}></p>
 						<div className='second-box'>
 							<h4>DevOps</h4>
 							<p>Nginx / Brotli / Docker / (CI/CD)</p>

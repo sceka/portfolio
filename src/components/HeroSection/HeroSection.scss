@@ -13,8 +13,6 @@
 	flex-direction: row;
 	justify-content: space-between; /* Space between the title and buttons */
 	width: 100%;
-	align-items: flex-end; /* Align children (title and buttons) to the bottom */
-	position: relative;
 }
 
 .first-section-title {
@@ -27,27 +25,34 @@
 	display: flex;
 	align-items: flex-end; /* Align the text itself to the bottom */
 	justify-content: flex-start;
+	// width: 70%;
 }
 
 .buttons {
 	display: flex;
 	flex-direction: row;
-	width: 400px;
+	width: 370px; /* Adjust width as needed */
 	align-items: flex-end; /* Align buttons to the bottom */
-	justify-content: space-between; /* Push buttons to the far right */
-	gap: 5px; /* Space between the buttons */
-	// TODO: Remove this after you fix issue with aligning
-	margin-bottom: 15px;
+	justify-content: space-between; /* Align buttons to the right end */
+	gap: 10px; /* Add gap between buttons */
+	margin-bottom: 15px; /* Keep bottom margin if needed */
 }
 
 .projects-button {
-	width: 270px;
+	width: 270px; /* Ensure this fits within the container */
 	height: 55px;
+	transition: opacity 0.3s ease-in;
 }
 
 .arrow-button {
-	width: 55px;
-	height: 55px;
+	position: relative;
+	transition: opacity 1s ease-in, transform 1s ease-in; /* Transition for opacity and transform */
+	will-change: opacity, transform; /* Hint for performance optimization */
+}
+
+.projects-button:hover .arrow-button {
+	opacity: 1; /* Change to fully visible on hover */
+	transition: translateX(-25px), 0.3s ease-in; /* Slide to the right a bit */
 }
 
 .second-section {
