@@ -28,7 +28,7 @@
 .button {
   width: 100%;
   height: 100%;
-  cursor: pointer;
+  cursor: url("../../../../public/images/black-click-cursor.png");
   border-radius: 100px;
   overflow: hidden;
 }

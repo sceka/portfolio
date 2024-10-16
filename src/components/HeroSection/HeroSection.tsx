@@ -29,6 +29,7 @@ export default function HeroSection() {
 	const heroDeveloperWord = languageTexts.find(
 		language => language.name === languageChosen
 	)?.heroDeveloperWord;
+
 	return (
 		<div className='hero-section'>
 			<div className='first-section'>

@@ -1,0 +1,17 @@
+* {
+  background-color: #121212;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  cursor: url("../public/images/black-cursor.png"), auto;
+}
+
+body {
+  padding: 30px;
+  overflow-x: hidden;
+  caret-color: black;
+}
+
+button {
+  cursor: url("../public/images/black-click-cursor.png"), auto;
+}
