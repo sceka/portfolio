@@ -32,7 +32,10 @@ function About() {
                     react_1["default"].createElement("h4", null, "Front-end"),
                     react_1["default"].createElement("p", null, "Typescript / React / Vue / Vuex / Redux Toolkit / React Native / Quasar Framework")),
                 react_1["default"].createElement("div", { className: 'last-about-section' },
-                    react_1["default"].createElement("p", { className: 'last-section-description' }, "Some of my favorite technologies topics, or tools that I worked with."),
+                    react_1["default"].createElement("p", { className: 'last-section-description' },
+                        "Some of my ",
+                        react_1["default"].createElement("span", null, "favorite technologies, topics, or tools"),
+                        " that I worked with."),
                     react_1["default"].createElement("div", { className: 'second-box' },
                         react_1["default"].createElement("h4", null, "DevOps"),
                         react_1["default"].createElement("p", null, "Nginx / Brotli / Docker / (CI/CD)")))))));

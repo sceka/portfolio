@@ -55,7 +55,8 @@ export default function About() {
 					</div>
 					<div className='last-about-section'>
 						<p className='last-section-description'>
-							Some of my favorite technologies topics, or tools that I worked with.
+							Some of my <span>favorite technologies, topics, or tools</span> that I
+							worked with.
 						</p>
 						<div className='second-box'>
 							<h4>DevOps</h4>

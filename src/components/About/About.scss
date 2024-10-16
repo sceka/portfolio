@@ -46,9 +46,9 @@
 }
 
 .first-box {
-	width: 400px;
-	height: 110px;
-	padding: 15px;
+	width: 600px;
+	height: 120px;
+	padding: 25px;
 	line-height: 20px;
 	background-color: transparent;
 	border: 0.5px solid variables.$light-gray;
@@ -61,20 +61,21 @@
 		color: variables.$light-gray;
 		font-family: "OpenSans", sans-serif;
 		font-weight: 300;
+		font-size: 17px;
 	}
 
 	p {
 		font-family: "FiraCode", sans-serif;
 		font-weight: 300;
-		font-size: 12px;
+		font-size: 13px;
 		margin-top: 7px;
 	}
 }
 
 .second-box {
-	width: 200px;
-	height: 100px;
-	padding: 15px;
+	width: 300px;
+	height: 110px;
+	padding: 20px;
 	background-color: transparent;
 	border: 0.5px solid variables.$light-gray;
 	border-radius: 20px;
@@ -86,12 +87,13 @@
 		font-family: "OpenSans", sans-serif;
 		font-weight: 300;
 		color: variables.$light-gray;
+		font-size: 17px;
 	}
 
 	p {
 		font-family: "FiraCode", sans-serif;
 		font-weight: 300;
-		font-size: 12px;
+		font-size: 13px;
 		margin-top: 7px;
 	}
 }
@@ -165,14 +167,18 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 400px;
+	width: 600px;
+}
 
-	.last-section-description {
-		font-family: "OpenSans", sans-serif;
-		font-weight: 300;
-		color: variables.$light-gray;
-		font-size: 12px;
-		display: flex;
-		width: 200px;
+.last-section-description {
+	font-family: "OpenSans", sans-serif;
+	font-weight: 300;
+	color: variables.$light-gray;
+	font-size: 14px;
+	width: 240px;
+
+	span {
+		color: variables.$white;
+		font-style: italic;
 	}
 }
