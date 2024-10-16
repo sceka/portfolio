@@ -27,7 +27,6 @@
   border-radius: 50%;
   /* Make the button circular */
   border: none;
-  cursor: url("../../../../public/images/black-click-cursor.png");
   display: flex;
   justify-content: center;
   align-items: center;

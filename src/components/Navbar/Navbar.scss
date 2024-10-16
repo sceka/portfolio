@@ -31,7 +31,7 @@
 	word-break: normal;
 	width: 50px;
 	font-family: "OpenSans", sans-serif;
-	cursor: pointer;
+	cursor: url("../../../public/images/black-click-cursor.png");
 }
 
 .navbar-menu {
@@ -39,7 +39,7 @@
 	font-size: 14px;
 
 	p {
-		cursor: pointer;
+		cursor: url("../../../public/images/black-click-cursor.png");
 	}
 }
 
@@ -84,6 +84,6 @@
 	p {
 		font-size: 18px;
 		font-family: "OpenSans", sans-serif;
-		cursor: pointer;
+		cursor: url("../../../public/images/black-click-cursor.png");
 	}
 }

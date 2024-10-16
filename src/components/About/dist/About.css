@@ -141,7 +141,6 @@
   border-radius: 100px;
   position: absolute;
   right: 55px;
-  cursor: pointer;
   transition: right 0.5s ease-in;
 }
 

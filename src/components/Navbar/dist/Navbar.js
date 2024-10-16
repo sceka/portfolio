@@ -4,7 +4,7 @@ var react_1 = require("react");
 require("./Navbar.scss");
 var hooks_1 = require("../../redux/hooks");
 var languageSlice_1 = require("../../redux/reducers/languageSlice");
-var language_1 = require("../../util/dist/language");
+var language_1 = require("../../util/language");
 function Navbar() {
     var _a;
     var languageChosen = hooks_1.useAppSelector(function (state) { return state.language; });

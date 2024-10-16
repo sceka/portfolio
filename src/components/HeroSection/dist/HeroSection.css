@@ -1,125 +1,124 @@
 .hero-section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
 }
 
 .first-section {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	/* Space between the title and buttons */
-	width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Space between the title and buttons */
+  width: 100%;
 }
 
 .first-section-title {
-	font-size: 140px;
-	color: #f5f5f5;
-	font-family: "FiraCode", sans-serif;
-	font-weight: 500;
-	margin: 0;
-	/* Ensure no extra margin */
-	line-height: 1;
-	display: flex;
-	align-items: flex-end;
-	/* Align the text itself to the bottom */
-	justify-content: flex-start;
+  font-size: 140px;
+  color: #f5f5f5;
+  font-family: "FiraCode", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  /* Ensure no extra margin */
+  line-height: 1;
+  display: flex;
+  align-items: flex-end;
+  /* Align the text itself to the bottom */
+  justify-content: flex-start;
 }
 
 .buttons {
-	display: flex;
-	flex-direction: row;
-	width: 370px;
-	/* Adjust width as needed */
-	align-items: flex-end;
-	/* Align buttons to the bottom */
-	justify-content: space-between;
-	/* Align buttons to the right end */
-	gap: 10px;
-	/* Add gap between buttons */
-	margin-bottom: 15px;
-	/* Keep bottom margin if needed */
+  display: flex;
+  flex-direction: row;
+  width: 370px;
+  /* Adjust width as needed */
+  align-items: flex-end;
+  /* Align buttons to the bottom */
+  justify-content: space-between;
+  /* Align buttons to the right end */
+  gap: 10px;
+  /* Add gap between buttons */
+  margin-bottom: 15px;
+  /* Keep bottom margin if needed */
 }
 
 .projects-button {
-	width: 270px;
-	/* Ensure this fits within the container */
-	height: 55px;
-	transition: opacity 0.3s ease-in;
+  width: 270px;
+  /* Ensure this fits within the container */
+  height: 55px;
+  transition: opacity 0.3s ease-in;
 }
 
 .arrow-button {
-	position: relative;
-	transition: opacity 1s ease-in, transform 1s ease-in;
-	/* Transition for opacity and transform */
-	will-change: opacity, transform;
-	/* Hint for performance optimization */
+  position: relative;
+  transition: opacity 1s ease-in, transform 1s ease-in;
+  /* Transition for opacity and transform */
+  will-change: opacity, transform;
+  /* Hint for performance optimization */
 }
 
 .projects-button:hover .arrow-button {
-	opacity: 1;
-	/* Change to fully visible on hover */
-	transition: translateX(-25px), 0.3s ease-in;
-	/* Slide to the right a bit */
+  opacity: 1;
+  /* Change to fully visible on hover */
+  transition: translateX(-25px), 0.3s ease-in;
+  /* Slide to the right a bit */
 }
 
 .second-section {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 100%;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 .second-section p {
-	font-size: 18px;
-	color: #a6a6a6;
-	font-family: "OpenSans", sans-serif;
-	font-weight: 400;
-	word-break: normal;
-	width: 420px;
+  font-size: 18px;
+  color: #a6a6a6;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  word-break: normal;
+  width: 420px;
 }
 .second-section p span {
-	font-family: "FiraCode", sans-serif;
-	color: #f5f5f5;
-	font-style: italic;
+  font-family: "FiraCode", sans-serif;
+  color: #f5f5f5;
+  font-style: italic;
 }
 .second-section h1 {
-	color: #f5f5f5;
-	font-size: 140px;
-	font-family: "FiraCode", sans-serif;
-	font-weight: 500;
+  color: #f5f5f5;
+  font-size: 140px;
+  font-family: "FiraCode", sans-serif;
+  font-weight: 500;
 }
 
 .action-buttons {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
 }
 
 .action-btn {
-	width: 120px;
-	height: 45px;
-	border-radius: 100px;
-	box-shadow: none;
-	cursor: url("../../../../public/images/black-click-cursor.png");
+  width: 120px;
+  height: 45px;
+  border-radius: 100px;
+  box-shadow: none;
 }
 
 .aciton-btns {
-	width: 250px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .btn-icon {
-	width: 15px;
-	margin: 4px;
+  width: 15px;
+  margin: 4px;
 }
 
 .carousel-container {
-	margin-top: 40px;
-	width: 100%;
+  margin-top: 40px;
+  width: 100%;
 }

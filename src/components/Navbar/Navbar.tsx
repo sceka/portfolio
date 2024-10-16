@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.scss";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { changeLanguage } from "../../redux/reducers/languageSlice";
-import { languageTexts } from "../../util/dist/language";
+import { languageTexts } from "../../util/language";
 
 export default function Navbar() {
 	const languageChosen = useAppSelector(state => state.language);
