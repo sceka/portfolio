@@ -2,40 +2,57 @@ import React from "react";
 import "./Work.scss";
 import WorkLayout from "../common/WorkLayout/WorkLayout";
 import { work } from "../../util/work";
+import { languageTexts } from "../../util/language";
+import { useAppSelector } from "../../redux/hooks";
 export default function Work() {
+	const languageChosen = useAppSelector(state => state.language);
+	const language = languageTexts.find(lan => languageChosen === lan.name);
+	const workTitle = language?.workTitle;
+	const developerWord = language?.developerWord;
+	const senior = language?.senior;
+	const august = language?.august;
+	const september = language?.september;
+	const march = language?.march;
+	const decembar = language?.decembar;
+	const jun = language?.jun;
+	const november = language?.november;
+	const description = language?.description;
+	const description1 = language?.description1;
+
 	const workExperience = [
 		{
 			name: "Fuel Me",
-			years: "Aug 2023 - Septembar 2024",
+			years: `${august} 2023 - ${september} 2024`,
 			total: "1 year 1 month",
-			position: "Senior Backend Developer",
+			position: `${senior} Backend ${developerWord}`,
 			type: "Hybrid"
 		},
 		{
 			name: "Fuel Me",
-			years: "March 2023 - August 2023",
+			years: `${march} 2023 - ${august} 2023`,
 			total: "1 year 1 month",
-			position: "Full Stack Developer",
+			position: `Full Stack ${developerWord}`,
 			type: "Remote"
 		},
 		{
 			name: "Wiv Technology",
-			years: "Decembar 2021 - March 2023",
+			years: `${decembar} 2021 - ${march} 2023`,
 			total: "1 year 4 months",
-			position: "Full Stack Developer",
+			position: `Full Stack ${developerWord}`,
 			type: "Remote"
 		},
 		{
 			name: "Fuel Me",
-			years: "Jun 2021 - November 2021",
+			years: `${jun} 2021 - ${november} 2021`,
 			total: "6 months",
-			position: "Full Stack Developer",
+			position: `Full Stack ${developerWord}`,
 			type: "Remote"
 		}
 	];
+
 	return (
 		<div className='work-container'>
-			<h1>Work</h1>
+			<h1>{workTitle}</h1>
 			{workExperience.map(work => (
 				<div className='work-experience'>
 					<div className='years'>

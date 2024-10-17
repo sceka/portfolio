@@ -9,6 +9,8 @@ type Props = {
 	description: string;
 	description1: string;
 	description2?: string;
+	github?: string;
+	website?: string;
 };
 
 export default function WorkLayout({
@@ -17,7 +19,9 @@ export default function WorkLayout({
 	skills,
 	description,
 	description1,
-	description2
+	description2,
+	github,
+	website
 }: Props) {
 	return (
 		<div className={!inverse ? "work-layout-normal" : "work-layout-inverse"}>
@@ -43,22 +47,46 @@ export default function WorkLayout({
 						/>
 					)}
 				</div>
-				<div className='github-button-work-section'>
-					<div className='github-wrapper'>
-						<Button
-							onClick={() => {}}
-							variant='white-outline'
-							icon='/images/github.png'
-							className='github'
-						/>
-						<Button
-							onClick={() => {}}
-							variant='fill'
-							icon='/images/diagonalRight.svg'
-							className='arrow-button'
-							iconClassName='diagonal-arrow'
-						/>
-					</div>
+				<div className='external-link-button'>
+					{/* TODO: Extract this */}
+					{github && (
+						<div className='github-button-work-section'>
+							<div className='github-wrapper'>
+								<Button
+									onClick={() => {}}
+									variant='white-outline'
+									icon='/images/github.png'
+									className='github'
+								/>
+								<Button
+									onClick={() => {}}
+									variant='fill'
+									icon='/images/diagonalRight.svg'
+									className='arrow-button'
+									iconClassName='diagonal-arrow'
+								/>
+							</div>
+						</div>
+					)}
+					{!website && (
+						<div className='github-button-work-section'>
+							<div className='github-wrapper'>
+								<Button
+									onClick={() => {}}
+									variant='white-outline'
+									icon='/images/website.png'
+									className='github'
+								/>
+								<Button
+									onClick={() => {}}
+									variant='fill'
+									icon='/images/diagonalRight.svg'
+									className='arrow-button'
+									iconClassName='diagonal-arrow'
+								/>
+							</div>
+						</div>
+					)}
 				</div>
 			</div>
 		</div>

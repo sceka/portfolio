@@ -4,39 +4,54 @@ var react_1 = require("react");
 require("./Work.scss");
 var WorkLayout_1 = require("../common/WorkLayout/WorkLayout");
 var work_1 = require("../../util/work");
+var language_1 = require("../../util/language");
+var hooks_1 = require("../../redux/hooks");
 function Work() {
+    var languageChosen = hooks_1.useAppSelector(function (state) { return state.language; });
+    var language = language_1.languageTexts.find(function (lan) { return languageChosen === lan.name; });
+    var workTitle = language === null || language === void 0 ? void 0 : language.workTitle;
+    var developerWord = language === null || language === void 0 ? void 0 : language.developerWord;
+    var senior = language === null || language === void 0 ? void 0 : language.senior;
+    var august = language === null || language === void 0 ? void 0 : language.august;
+    var september = language === null || language === void 0 ? void 0 : language.september;
+    var march = language === null || language === void 0 ? void 0 : language.march;
+    var decembar = language === null || language === void 0 ? void 0 : language.decembar;
+    var jun = language === null || language === void 0 ? void 0 : language.jun;
+    var november = language === null || language === void 0 ? void 0 : language.november;
+    var description = language === null || language === void 0 ? void 0 : language.description;
+    var description1 = language === null || language === void 0 ? void 0 : language.description1;
     var workExperience = [
         {
             name: "Fuel Me",
-            years: "Aug 2023 - Septembar 2024",
+            years: august + " 2023 - " + september + " 2024",
             total: "1 year 1 month",
-            position: "Senior Backend Developer",
+            position: senior + " Backend " + developerWord,
             type: "Hybrid"
         },
         {
             name: "Fuel Me",
-            years: "March 2023 - August 2023",
+            years: march + " 2023 - " + august + " 2023",
             total: "1 year 1 month",
-            position: "Full Stack Developer",
+            position: "Full Stack " + developerWord,
             type: "Remote"
         },
         {
             name: "Wiv Technology",
-            years: "Decembar 2021 - March 2023",
+            years: decembar + " 2021 - " + march + " 2023",
             total: "1 year 4 months",
-            position: "Full Stack Developer",
+            position: "Full Stack " + developerWord,
             type: "Remote"
         },
         {
             name: "Fuel Me",
-            years: "Jun 2021 - November 2021",
+            years: jun + " 2021 - " + november + " 2021",
             total: "6 months",
-            position: "Full Stack Developer",
+            position: "Full Stack " + developerWord,
             type: "Remote"
         }
     ];
     return (react_1["default"].createElement("div", { className: 'work-container' },
-        react_1["default"].createElement("h1", null, "Work"),
+        react_1["default"].createElement("h1", null, workTitle),
         workExperience.map(function (work) { return (react_1["default"].createElement("div", { className: 'work-experience' },
             react_1["default"].createElement("div", { className: 'years' },
                 react_1["default"].createElement("p", { className: 'year' }, work.years),

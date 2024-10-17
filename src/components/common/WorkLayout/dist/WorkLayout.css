@@ -30,7 +30,7 @@
 .work-details-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 150px;
+  width: 300px;
   margin-top: 30px;
   gap: 15px;
 }
@@ -70,4 +70,9 @@
 
 .github-button-work-section {
   margin-top: 60px;
+}
+
+.external-link-button {
+  display: flex;
+  flex-direction: row;
 }

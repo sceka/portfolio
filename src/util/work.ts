@@ -1,7 +1,7 @@
 export const work = [
 	{
 		name: "FuelMe",
-		skils: ["Node.js", "MongoDB", "Javascript", "API", "Bitbucket", "Git"],
+		skils: ["Node.js", "MongoDB", "Javascript", "REST API", "Bitbucket", "Git"],
 		description:
 			"<span>Fuel Me</span> - is a fuel delivery platform offering convenient <span>fuel ordering, tracking, and management</span> for various industries, including construction, transportation, and agriculture.",
 		description1:
