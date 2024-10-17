@@ -1,6 +1,7 @@
 import React from "react";
 import "./Work.scss";
-
+import WorkLayout from "../common/WorkLayout/WorkLayout";
+import { work } from "../../util/work";
 export default function Work() {
 	const workExperience = [
 		{
@@ -51,10 +52,16 @@ export default function Work() {
 				<h4>Work Experience</h4>
 				<h5>3 years 7 months</h5>
 			</div>
-			<div className='grid-conatiner'>
-				<h1>FuelMe</h1>
-				<div className='skills-container'></div>
-			</div>
+			{work.map(work => (
+				<WorkLayout
+					description={work.description}
+					description1={work.description1}
+					inverse={false}
+					jobName={work.name}
+					skills={work.skils}
+					key={1}
+				/>
+			))}
 		</div>
 	);
 }

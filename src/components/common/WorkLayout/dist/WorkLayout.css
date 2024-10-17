@@ -1,0 +1,73 @@
+.work-layout-normal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+
+.work-layout-inverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+}
+
+.work-details {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.work-details h1 {
+  font-family: "OpenSans", sans-serif;
+  color: #f5f5f5;
+  font-size: 22px;
+  width: inherit;
+  font-weight: 500;
+}
+
+.work-details-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 150px;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.skills-circle {
+  width: auto;
+  padding: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid #f5f5f5;
+  font-family: "FiraCode", sans-serif;
+  border-radius: 100px;
+  color: #f5f5f5;
+  font-size: 12px;
+}
+
+.skills-circle:hover {
+  background-color: white;
+  color: #121212;
+}
+
+.company-description {
+  margin-top: 30px;
+}
+.company-description p {
+  color: #a6a6a6;
+  font-family: "OpenSans", sans-serif;
+  margin-top: 30px;
+}
+.company-description p span {
+  color: #f5f5f5;
+  font-family: "OpenSans", sans-serif;
+  font-style: italic;
+}
+
+.github-button-work-section {
+  margin-top: 60px;
+}
