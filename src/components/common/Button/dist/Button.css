@@ -1,0 +1,59 @@
+.fill {
+  background-color: #f5f5f5;
+  color: #121212;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.white-outline {
+  background-color: transparent;
+  border: 1px solid #f5f5f5;
+  color: #f5f5f5;
+  border-radius: 100px;
+}
+
+.icon-fill {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.gray-outline {
+  background-color: transparent;
+  border: 0.5px solid #a6a6a6;
+  color: #f5f5f5;
+  border-radius: 100px;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  overflow: hidden;
+  cursor: url("../../../../public/images/black-click-cursor.png");
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-and-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 100px;
+  color: #a6a6a6;
+  font-family: "OpenSans", sans-serif;
+  font-style: italic;
+}
+
+.label {
+  font-family: "OpenSans", sans-serif;
+  color: #121212;
+  background-color: transparent;
+  font-style: italic;
+  font-size: 18px;
+}

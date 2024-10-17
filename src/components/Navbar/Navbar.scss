@@ -45,7 +45,7 @@
 
 .big-circle {
 	position: absolute;
-	right: -45px; /* Move the circle out of the viewport */
+	right: -45px;
 	top: -45px;
 	border-radius: 100px;
 	border: 0.5px solid variables.$light-gray;
@@ -57,7 +57,7 @@
 
 	&:hover {
 		transform: scale(1.1);
-		border-color: variables.$white; /* Change border color on hover */
+		border-color: variables.$white;
 	}
 }
 

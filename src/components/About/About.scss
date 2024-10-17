@@ -142,6 +142,7 @@
 	position: absolute;
 	right: 20;
 	transition: right 0.5s ease-in; // ease-in for smoother start
+	cursor: url("../../../public/images/black-click-cursor.png");
 }
 
 .arrow-button {
@@ -151,11 +152,13 @@
 	position: absolute;
 	right: 55px; // starts outside of view
 	transition: right 0.5s ease-in;
+	cursor: url("../../../public/images/black-click-cursor.png");
 }
 
 .diagonal-arrow {
 	width: 35px;
 	height: 35px;
+	cursor: url("../../../public/images/black-click-cursor.png");
 }
 
 .github-wrapper:hover .arrow-button {

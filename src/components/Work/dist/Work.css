@@ -1,0 +1,87 @@
+.work-container {
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0;
+  width: 100vw;
+  /* Ensures it spans the full width of the viewport */
+  margin-left: calc(-50vw + 50%);
+  /* Centers the full-width section */
+}
+.work-container h1 {
+  font-size: 100px;
+  color: #f5f5f5;
+  font-family: "FiraCode", sans-serif;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.work-experience {
+  display: flex;
+  border: 0.5px solid #a6a6a6;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.work-experience:hover {
+  color: #121212;
+  background-color: white;
+}
+
+.work-experience:hover .name {
+  color: #121212;
+  background-color: white;
+}
+
+.work-experience:hover .position {
+  color: #121212;
+  background-color: white;
+}
+
+.work-experience:hover .year {
+  color: #121212;
+  background-color: white;
+}
+
+.work-experience:hover .total-years {
+  color: #121212;
+  background-color: white;
+}
+
+.years {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.years .year {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-family: "OpenSans", sans-serif;
+}
+.years .total-years {
+  color: #a6a6a6;
+  font-size: 12px;
+  font-family: "OpenSans", sans-serif;
+}
+
+.name {
+  font-family: "OpenSans", sans-serif;
+  font-size: 19px;
+  color: #f5f5f5;
+  font-style: normal;
+  margin-right: auto;
+  width: 450px;
+}
+
+.position {
+  font-family: "FiraCode", sans-serif;
+  font-size: 19px;
+  color: #f5f5f5;
+  margin-right: auto;
+  text-align: left;
+  width: 450px;
+}
