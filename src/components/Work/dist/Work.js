@@ -43,6 +43,12 @@ function Work() {
             react_1["default"].createElement("div", { className: 'position' },
                 work.position,
                 " | ",
-                work.type))); })));
+                work.type))); }),
+        react_1["default"].createElement("div", { className: 'total-work-years' },
+            react_1["default"].createElement("h4", null, "Work Experience"),
+            react_1["default"].createElement("h5", null, "3 years 7 months")),
+        react_1["default"].createElement("div", { className: 'grid-conatiner' },
+            react_1["default"].createElement("h1", null, "FuelMe"),
+            react_1["default"].createElement("div", { className: 'skills-container' }))));
 }
 exports["default"] = Work;

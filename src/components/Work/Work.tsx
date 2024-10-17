@@ -47,6 +47,14 @@ export default function Work() {
 					</div>
 				</div>
 			))}
+			<div className='total-work-years'>
+				<h4>Work Experience</h4>
+				<h5>3 years 7 months</h5>
+			</div>
+			<div className='grid-conatiner'>
+				<h1>FuelMe</h1>
+				<div className='skills-container'></div>
+			</div>
 		</div>
 	);
 }
