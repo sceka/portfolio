@@ -1,6 +1,7 @@
 import React from "react";
 import "./WorkLayout.scss";
 import Button from "../Button/Button";
+import TwoPieceButton from "../TwoPieceButton/TwoPieceButton";
 
 type Props = {
 	jobName: string;
@@ -48,45 +49,8 @@ export default function WorkLayout({
 					)}
 				</div>
 				<div className='external-link-button'>
-					{/* TODO: Extract this */}
-					{github && (
-						<div className='github-button-work-section'>
-							<div className='github-wrapper'>
-								<Button
-									onClick={() => {}}
-									variant='white-outline'
-									icon='/images/github.png'
-									className='github'
-								/>
-								<Button
-									onClick={() => {}}
-									variant='fill'
-									icon='/images/diagonalRight.svg'
-									className='arrow-button'
-									iconClassName='diagonal-arrow'
-								/>
-							</div>
-						</div>
-					)}
-					{!website && (
-						<div className='github-button-work-section'>
-							<div className='github-wrapper'>
-								<Button
-									onClick={() => {}}
-									variant='white-outline'
-									icon='/images/website.png'
-									className='github'
-								/>
-								<Button
-									onClick={() => {}}
-									variant='fill'
-									icon='/images/diagonalRight.svg'
-									className='arrow-button'
-									iconClassName='diagonal-arrow'
-								/>
-							</div>
-						</div>
-					)}
+					{!github && <TwoPieceButton icon='github' />}
+					{!website && <TwoPieceButton icon='website' />}
 				</div>
 			</div>
 		</div>

@@ -1,0 +1,41 @@
+.github-button {
+	display: flex;
+	position: relative;
+}
+
+.github {
+	width: 55px;
+	height: 55px;
+	border-radius: 100px;
+	position: absolute;
+	right: 20;
+	transition: right 0.5s ease-in; // ease-in for smoother start
+	cursor: url("../../../../public/images/black-click-cursor.png");
+}
+
+.arrow-button {
+	width: 55px;
+	height: 55px;
+	border-radius: 100px;
+	position: absolute;
+	right: 55px; // starts outside of view
+	transition: right 0.5s ease-in;
+	cursor: url("../../../../public/images/black-click-cursor.png");
+}
+
+.diagonal-arrow {
+	width: 35px;
+	height: 35px;
+	cursor: url("../../../../public/images/black-click-cursor.png");
+}
+
+.github-wrapper:hover .arrow-button {
+	right: 95px; // arrow moves into the GitHub button's position
+}
+
+.github-wrapper {
+	width: 150px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}

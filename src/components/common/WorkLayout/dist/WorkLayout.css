@@ -68,11 +68,8 @@
   font-style: italic;
 }
 
-.github-button-work-section {
-  margin-top: 60px;
-}
-
 .external-link-button {
   display: flex;
   flex-direction: row;
+  margin-top: 90px;
 }

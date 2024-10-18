@@ -3,6 +3,7 @@ import "./About.scss";
 import Button from "../common/Button/Button";
 import { languageTexts } from "../../util/language";
 import { useAppSelector } from "../../redux/hooks";
+import Avatar from "../common/Avatar/Avatar";
 
 export default function About() {
 	const languageChosen = useAppSelector(state => state.language);
@@ -10,6 +11,7 @@ export default function About() {
 	const aboutTechonlogiesText = languageTexts.find(
 		language => languageChosen === language.name
 	)?.aboutText;
+
 	return (
 		<div className='about-container'>
 			<div className='about-title-section'>
@@ -68,6 +70,9 @@ export default function About() {
 							<p>Nginx / Brotli / Docker / (CI/CD)</p>
 						</div>
 					</div>
+				</div>
+				<div className='avatar-div'>
+					<Avatar />
 				</div>
 			</div>
 		</div>

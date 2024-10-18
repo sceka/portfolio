@@ -1,7 +1,7 @@
 .about-container {
-  margin-top: 200px;
   display: flex;
   flex-direction: column;
+  margin-top: 200px;
 }
 
 .about-title-section {
@@ -114,48 +114,6 @@
   justify-content: space-between;
 }
 
-.github-wrapper {
-  width: 150px;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.github-button {
-  display: flex;
-  position: relative;
-}
-
-.github {
-  width: 55px;
-  height: 55px;
-  border-radius: 100px;
-  position: absolute;
-  right: 20;
-  transition: right 0.5s ease-in;
-  cursor: url("../../../public/images/black-click-cursor.png");
-}
-
-.arrow-button {
-  width: 55px;
-  height: 55px;
-  border-radius: 100px;
-  position: absolute;
-  right: 55px;
-  transition: right 0.5s ease-in;
-  cursor: url("../../../public/images/black-click-cursor.png");
-}
-
-.diagonal-arrow {
-  width: 35px;
-  height: 35px;
-  cursor: url("../../../public/images/black-click-cursor.png");
-}
-
-.github-wrapper:hover .arrow-button {
-  right: 95px;
-}
-
 .last-about-section {
   display: flex;
   justify-content: space-between;
@@ -173,4 +131,16 @@
 .last-section-description span {
   color: #f5f5f5;
   font-style: italic;
+}
+
+.avatar-div {
+  display: flex;
+  justify-content: center;
+  /* Center avatar horizontally */
+  align-items: center;
+  /* Center avatar vertically */
+  width: 50%;
+  /* Give enough width for the avatar */
+  height: 100%;
+  /* Ensure the height is dynamic */
 }
